@@ -1,0 +1,31 @@
+{
+  "name": "radar-mei",
+  "version": "0.2.0",
+  "private": true,
+  "author": "Franciane de Morais Silva",
+  "description": "Consulta auxiliar de licitações para MEI.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build --webpack",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types tests/product-filter.test.ts && node --experimental-strip-types tests/company.test.ts"
+  },
+  "dependencies": {
+    "next": "16.3.4",
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.2.1",
+    "@types/node": "22.19.19",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "tailwindcss": "4.2.1",
+    "typescript": "5.9.3"
+  }
+}
